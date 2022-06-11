@@ -1,0 +1,327 @@
+
+*{
+    max-width: 1732px;
+    margin: auto;
+   
+    
+    }
+    
+    body{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin: 0; 
+        padding: 0; 
+        background-repeat: no-repeat;
+        background-attachment:fixed;
+        background-color:#0e0f11e2;
+    }
+    .menu{
+        
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0e0f11e2;
+        position: sticky;
+        top: 0;
+    }
+    .menu ul{
+        display: flex;
+        list-style:none ;
+        margin: 20px 0px;
+        font-weight: bold;
+    }
+    .menu ul li{
+        font-family:Bahnschrift Light;
+    }
+    .menu ul li a{
+        text-decoration: rgb(29, 112, 79);
+        color:rgb(136, 139, 138);
+        padding: 20px 40px;
+        transition: all .5s ease;
+    }
+    .menu ul li a:hover{
+        background-color:#54af9b;
+        color:rgb(37, 31, 31);
+        box-shadow:0 0 10px antiquewhite;
+    }
+    
+    #cont{
+    display:contents;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    color:#dae9e8;
+    flex-wrap: wrap;
+            }
+    
+     #cont::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height:1200px;
+    width: 100%;
+    z-index: -1;
+}
+
+h1{
+    font-weight: normal;
+    font-size: 50px;
+    margin: 40px 0;
+    Letter-spacing: .6em;
+    position: relative;
+    color: #dae9e8;
+}
+h1::before{
+    content: '';
+    position:absolute;
+    width:100px;
+    height: 3px;
+    background-color:aquamarine;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 6s linear infinite;
+}
+@keyframes animate {
+    0%{
+        width: 500px;
+    }
+    50%{
+        width: 300px;
+    }
+    100%{
+        width:100px;
+    }
+    
+}
+.top-content{
+    background-color: #1cddff;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(255, 255, 255, 0.726);
+}
+
+h3{
+    font-family: sans-serif;
+    font-size: 30px;
+    height: 100%;
+    line-height: 60px;
+    padding: 0 50px;
+    color: rgb(59, 25, 25);
+    text-shadow:3px 3px 3px rgba(75, 72, 72, 0.459); ;
+}
+input{
+    display:none;
+
+}
+.container{
+    width: 100%;
+    text-align: center; 
+
+}
+.photo-gallery{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:  3fr;
+    opacity: 1;
+    
+ 
+}
+.photo-gallery img{
+    width: 300px;
+    height: 300px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(82, 72, 72);
+    
+}
+.STI h2{
+ padding: 10px 10px 10px;
+ background-color:rgba(29, 102, 62, 0.952);
+ box-shadow: 3px 3px 5px rgb(8, 8, 8);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: rgb(197, 188, 176);
+    font-family: Impact;
+    font-weight: normal;
+    text-shadow:3px 3px 3px rgba(6, 5, 5, 0.726); ;
+}
+.STI{
+    margin-top: 10px;
+    background-color: rgb(107, 189, 204);   
+     border-radius: 10px;
+}
+.STI img{
+    margin: 20px 20px 20px 20px;
+    width: 300px;
+    transition: .5s ease;
+    height: 200px;
+}
+.Vac h2{
+    padding: 10px 10px 10px;
+    background-color:rgba(11, 94, 48, 0.952);
+    box-shadow: 3px 3px 5px rgb(8, 8, 8);
+       margin-bottom: 10px;
+       border-radius: 10px;
+       color: rgb(197, 188, 176);
+       font-family: Impact;
+       font-weight: normal;
+       text-shadow:3px 3px 3px rgba(6, 5, 5, 0.726); ;
+   }
+   .Vac img{
+       margin: 10px 10px 15px 10px;
+       width: 400px;
+       height: 200px;
+       transition: .5s ease;
+   }
+   .Vac img:hover{
+  transform: scale(1.5);
+  box-shadow: none;
+    
+}
+   .Vac{
+       margin-top: 30px; 
+      
+       background-color: rgb(107, 189, 204);
+       border-radius: 10px;
+   }
+   .Network h2{
+    padding: 10px 10px 10px;
+    background-color:rgba(11, 94, 48, 0.952);
+    box-shadow: 3px 3px 5px rgb(8, 8, 8);
+       margin-bottom: 10px;
+       border-radius: 10px;
+       color: rgb(197, 188, 176);
+       font-family: Impact;
+       font-weight: normal;
+       text-shadow:3px 3px 3px rgba(6, 5, 5, 0.726); ;
+   }
+   .Network img{
+       margin: 5px 5px 5px 5px;
+       width: 400px;
+       height: 200px;
+       
+   
+    transition: .5s ease;
+    backface-visibility: hidden;
+  
+   }
+   .Network{
+
+       margin-top: 30px; 
+      cursor: pointer;
+       background-color: rgb(107, 189, 204);
+       border-radius: 10px;
+   }
+   .Network h2:hover{
+    transform: scale(1.1);
+    background-color: rgb(19, 136, 239);
+    color:rgb(222, 220, 220);
+
+   }
+   .STI h2:hover{
+    transform: scale(1.1);
+    background-color: rgb(19, 136, 239);
+    color:rgb(222, 220, 220);
+}
+
+.Vac h2:hover{
+    transform: scale(1.1);
+    background-color: rgb(19, 136, 239);
+    color:rgb(222, 220, 220);
+}
+.Network img:hover{
+    transform: scale(1.5);
+    box-shadow: none;
+    width: 30%;
+    height: 20%;
+      
+  }
+  .STI img:hover{
+    transform: scale(1.5);
+    box-shadow: none;
+    content: "LEO AMADOR";
+    margin: auto;
+      
+  }
+   .Sql h2{
+    padding: 10px 10px 10px;
+    background-color:rgba(11, 94, 48, 0.952);
+    box-shadow: 3px 3px 5px rgb(8, 8, 8);
+       margin-bottom: 10px;
+       border-radius: 10px;
+       color: rgb(197, 188, 176);
+       font-family: Impact;
+       font-weight: normal;
+       text-shadow:3px 3px 3px rgba(6, 5, 5, 0.726); ;
+   }
+   .Sql img{
+       margin: 5px 5px 5px 5px;
+       width: 400px;
+       height: 400px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  
+   }
+   .Sql{
+     margin-top: 30px; 
+      cursor: pointer;
+       background-color: rgb(107, 189, 204);
+       border-radius: 10px;
+   }
+   .Sql h2:hover{
+    transform: scale(1.1);
+    background-color: rgb(19, 136, 239);
+    color:rgb(222, 220, 220);
+
+   } .Sql img:hover{
+    transform: scale(1.5);
+    box-shadow: none;
+    content: "LEO AMADOR";
+    margin: auto;  
+  }
+
+.Layout h2{
+ padding: 10px 10px 10px;
+ background-color:rgba(11, 94, 48, 0.952);
+ box-shadow: 3px 3px 5px rgb(8, 8, 8);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: rgb(197, 188, 176);
+    font-family: Impact;
+    font-weight: normal;
+    text-shadow:3px 3px 3px rgba(6, 5, 5, 0.726); ;
+}
+.Layout img{
+    margin: 5px 5px 5px 5px;
+    width: 400px;
+    height: 400px;
+ transition: .5s ease;
+ backface-visibility: hidden;
+
+}
+.Layout{
+  margin-top: 30px; 
+  margin-bottom: 10 0px;
+   cursor: pointer;
+    background-color: rgb(107, 189, 204);
+    border-radius: 10px;
+}
+.Layout h2:hover{
+ transform: scale(1.1);
+ background-color: rgb(19, 136, 239);
+ color:rgb(222, 220, 220);
+
+} .Layout img:hover{
+ transform: scale(1.5);
+ box-shadow: none;
+ content: "LEO AMADOR";
+ margin: auto;  
+}

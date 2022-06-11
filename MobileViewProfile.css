@@ -1,0 +1,443 @@
+
+
+    body{
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color:#111416;
+        
+    }
+    .menu{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #111416;
+        position: sticky;
+        top: 0;
+    }
+    .menu ul{
+        display: flex;
+        list-style:none ;
+        margin: 15px 0px;
+        font-weight: bold;
+    }
+    .menu ul li{
+        font-family:Bahnschrift Light;
+    }
+    .menu ul li a{
+        text-decoration: rgb(195, 221, 210);
+        color:rgb(241, 197, 139);
+        padding: 5px 10px;
+        font-size: 13px;
+        transition: all .5s ease;
+        left: 0px;
+    }
+    .menu ul li a:hover{
+        background-color:#c9924a;
+        color:rgb(37, 31, 31);
+        box-shadow:0 0 10px antiquewhite;
+    }
+    
+   
+    .bg{
+        padding: 0px;
+  
+    }
+    .head img{
+     margin-left: 5px;
+       width: 40%;
+       border-radius: 50%;
+       border-style: solid  ;
+       border-color: #817361;
+       border-width: 5px;
+       box-shadow: 0px 2px 2px 2px rgb(87, 94, 97);
+       
+    }
+    .info{
+        position:relative;
+        border-radius: 10%;
+        margin-left: 41%;
+        margin-top: -150px;
+        width: 56%;
+        padding: 1px 1px 1px 1px;
+        background-color: #00000000;
+        color: #c9a996;
+        border-width: thick;
+        border-top: solid;    
+        border-color: #f1ccb5;
+       
+    }
+        
+    .info h1{
+        margin-right: -5px;
+        font-size: 20px;
+        position:relative;
+        margin-top: 3%;
+        margin-left: 20px;
+    
+    }
+    .info h2 {
+        margin-top: 2px;
+        text-align: right;
+        font-size:10px ;
+  
+    }
+    .info h2{
+        font-size: 15px;
+    }
+    table{
+       font-size: 10px; 
+    }
+    
+    th{
+        background-color: #c5d5c5;
+        padding-bottom: 10px;
+        border-width: 5px;
+        box-shadow: 5px 5px  rgb(87, 94, 97);
+        color:#4f3222;
+    }
+    th, td {
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 5%;
+      }
+      
+      .box{
+          background-color: #f4e1d2;
+          border-top: solid;
+          border-width: thick;
+          color: #000000;
+          border-bottom: solid;
+          border-color: #625750;
+          border-radius: 5px;
+          margin-left: 0px;
+          margin-right: 0px;
+          margin-bottom: 5px;
+          
+      }
+     .box h2{
+        margin-left: 20px;
+       
+      }
+   table img{
+       width: auto;
+      height: 60px;
+      border-radius: 90%;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+   }
+   td img{
+       border:solid;
+   }
+   .box h2{
+       text-align: center;
+       margin-top: 15px;
+       margin-bottom: 15px;
+    text-shadow: 2px 2px #2824245a;
+   }
+   .skills-bar{
+       width: 80%;
+       background: #c6bcb6;
+       box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+       color:#240f02;
+       border-radius: 10px;
+       padding: 25px 5px;
+   }
+   .skills-bar .bar{
+       margin: 20px 0;
+   }
+   .skills-bar.bar:first-child{
+       margin-top: 0px;
+   }
+   .skills-bar.bar .inf{
+    margin-bottom: 5px;
+}
+   .skills-bar.bar .inf span{
+        font-size:17px;
+        font-weight: 500;
+        animation: showText 0.5s 1s linear forwards;
+    
+    }
+    @keyframes showText{
+    100%{
+        opacity: 1;
+    
+    }
+}
+   .skills-bar .bar .progress-line{
+       position: abso;
+       height: 10px;
+       width: auto;
+       border-radius: 10px;
+       background: #5852526f;
+       transform: scaleX(0);
+       transform-origin: left;
+       box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+                         0px 1px rgba(96, 85, 85, 0.8);
+       animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+                         
+   }
+   .bar .progress-line span{
+       height: 100%;
+       width: 80%;
+       background: #528267;
+       position: absolute;
+       border-radius: 10px;
+       transform: scaleX(0);
+       transform-origin: left;
+       animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+   }
+
+   @keyframes animate {
+       100%{
+        transform: scaleX(1);
+        
+       }
+   }
+
+.progress-line.java span{
+    width: 89%;
+}
+.progress-line.python span{
+    width: 33%;
+}
+.progress-line.c span{
+    width: 70%;
+}
+.progress-line.Network span{
+    width: 69%;
+}
+.progress-line.webdes span{
+    width: 62%;
+}
+.progress-line.mysql span{
+    width: 46%;
+}
+
+   .bar .progress-line span::before{
+        position: absolute;
+        content: "";
+        right: 0;
+        top:-10px;
+        height: 0;
+        width: 0;
+        border: 7px solid transparent;
+        border-bottom-width: 0px;
+        border-right-width: 0px;
+        border-top-color: #000;
+        opacity: 0;
+        animation: showText2 0.5s 1.5s linear forwards;
+   }
+   .bar .progress-line span::after{
+    position: absolute;
+    right: 0;
+    top:-25px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background:#000;
+    padding: 1px 8px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+    
+}
+@keyframes showText2{
+100%{
+    opacity: 1;
+
+}
+}
+.progress-line.java span::after{
+    content: "89%";
+}
+.progress-line.python span::after{
+    content: "33%";
+}
+.progress-line.c span::after{
+    content: "70%";
+}
+.progress-line.Network span::after{
+    content: "69%";
+}
+.progress-line.webdes span::after{
+    content: "62%";
+}
+.progress-line.mysql span::after{
+    content: "46%";
+}
+.logo img{
+    position:relative;
+    width: 100px;
+    height: 100px;
+    
+    
+}
+.logo h2{
+    position:relative;
+    width: 100px;
+    height: 100px;
+    margin-left: 25%;
+    margin-top: -60px;
+    font-size: 20px;
+    margin-bottom:-50px;
+    
+}
+.logo{
+    padding-top: 10px;
+    border-width: 30%;
+    
+}
+.logoSkill img{
+    position:relative;
+    width: auto;
+    height: 80px;
+    margin-left: 0%;
+    border-radius: 100%;
+    margin-bottom:10px;
+}
+.logoSkill h2{
+    position:relative;
+    width: 100px;
+    height: 100px;
+    margin-left: 15%;
+    margin-top: -60px;
+    font-size: 20px;
+    margin-bottom:-50px;
+}
+
+.logoSkill{
+padding-top: 50px;
+}
+.educ{
+    
+        background-color: #b1cbbb;
+        margin-bottom: -20px;
+          border-width: thick;
+          color: #2b2b26;
+          border-bottom: solid;
+          border-color: #625750;
+          border-radius: 10px;
+          box-shadow: 5px 5px 5px 5px rgb(87, 94, 97);
+          
+}
+
+.seminars{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(87, 94, 97);
+    background-color: #b1cbbb;
+          
+}
+.seminars td{
+    border-right: solid;
+    border-radius: 0;
+}
+.seminars h2{
+    position:relative;
+    width: 100px;
+    height: 100px;
+    margin-left: 22%;
+    margin-top: -70px;
+    font-size: 20px;
+    margin-bottom:-50px;
+}
+.seminars img{
+    position:relative;
+    width: auto;
+    height: 80px;
+    border-radius: 100%;
+    margin-bottom:10px;
+}
+.career{
+    padding: 5px 5px 5px px;
+}
+.career img{
+    position:relative;
+    width:auto;
+    height: 50px;
+    margin-left: 5px;
+    border-radius: 100%;
+    margin-bottom:10px;
+}
+.career h2{
+    position:relative;
+    width: 100px;
+    height: 100px;
+    margin-left: 40px;
+    margin-top: -60px;
+    font-size: 20px;
+   margin-bottom: 0px;
+}
+.career p{
+    padding-left: 5px;
+    margin-top: -40px;
+    width: auto;
+    text-align:left;
+    font-size: 10px;
+}
+.awards{
+    margin-bottom: 50px;
+}
+.awards img{
+    position:relative;
+    width: auto;
+    height: 80px;
+    margin-left: 10px;
+    border-radius: 100%;
+    margin-bottom:-10px;
+}
+.awards h2{ 
+    position:relative;
+    width: 100px;
+    height: 100px;
+    margin-left: 20%;
+    margin-top: -50px;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+.awards table{
+    margin-top: -40px;
+}
+.awards th{
+    border-radius: 0;
+    background-color: #ffcc5c;
+}
+.head button{
+    color: #240f02;
+    font-size: 10px;
+    background-color: #97a885;
+    width: 50%;
+    height: 50%;
+    
+}
+.Certs{
+    padding-right: 0px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(87, 94, 97);
+    background-color: #b1cbbb;
+    display: grid;
+
+    
+}
+.Certs h2{
+    margin-left: 3px;
+}
+.Certs img{
+    margin-left: 1px;
+    width: 300px;
+    height: 20%;
+    margin-right: 5px;
+    padding-left: 5px;
+    padding-right: 0px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(82, 72, 72);
+    
+}
